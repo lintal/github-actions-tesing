@@ -7,5 +7,7 @@ on:
 jobs:
   do-something:
     runs-on: ubuntu-latest
+    environment: 
+      name: test
     steps:
     - run: echo 'do something'
