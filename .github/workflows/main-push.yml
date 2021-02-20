@@ -5,9 +5,15 @@ on:
     branches: [ main ]
     
 jobs:
-  do-something:
+  do-something-test:
     runs-on: ubuntu-latest
     environment: 
       name: test
     steps:
-    - run: echo 'do something'
+    - run: echo 'do something on test'
+  do-something-live:
+    runs-on: ubuntu-latest
+    environment: 
+      name: live
+    steps:
+    - run: echo 'do something on live'
