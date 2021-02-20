@@ -6,13 +6,13 @@ on:
     
 jobs:
   do-something-test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment: 
       name: test
     steps:
     - run: echo 'do something on test'
   do-something-live:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: do-something-test
     environment: 
       name: live
