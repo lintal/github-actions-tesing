@@ -1,0 +1,11 @@
+name: main-push
+
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  do-something:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo 'do something'
